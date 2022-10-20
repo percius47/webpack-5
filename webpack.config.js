@@ -54,7 +54,9 @@ const webpackConfig = {
 
 	devtool: "inline-source-map",
 	devServer: {
-		contentBase: "./dist"
+        static: {
+            directory: path.join(__dirname, "dist")
+          }
 	},
 
 	mode: "production"
