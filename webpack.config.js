@@ -54,9 +54,9 @@ const webpackConfig = {
 
 	devtool: "inline-source-map",
 	devServer: {
-		contentBase: "./dist"
+		static: "./dist"
 	},
-
+	performance: { hints: false },
 	mode: "production"
 };
 
